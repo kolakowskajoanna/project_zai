@@ -10,7 +10,8 @@
 * docker-compose - db z postresa obrazu
 
 * dodac serializacje modelu
-* docac widoki RESTFUL
+* dodac widoki func (function based)
+* dodac widoki RESTFUL (class based)
 * dodac widoki do routera w urls
 * otestowac na DRF gui
 
