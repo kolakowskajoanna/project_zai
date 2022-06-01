@@ -1,1 +1,10 @@
 .ssh/
+wip.md
+env/
+.vscode/
+
+*.pyc
+__pycache__/
+
+# ... todo inne ignory
+*.sqlite3
