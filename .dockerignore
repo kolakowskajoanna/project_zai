@@ -1,1 +1,3 @@
-# todo :)
+env/
+.ssh/
+.vscode/

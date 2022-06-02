@@ -1,0 +1,4 @@
+
+
+GET http://omni:omni@localhost:8001/api/users
+Content-Type: application/json

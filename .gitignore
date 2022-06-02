@@ -2,7 +2,7 @@
 wip.md
 env/
 .vscode/
-
+db_data/
 *.pyc
 __pycache__/
 

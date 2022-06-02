@@ -1,0 +1,6 @@
+
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0MzQ3NDY4LCJpYXQiOjE2NTQxNzQ2NjgsImp0aSI6IjNiNmYyNmQ0NzQzZDRjNDFhMTM2OGU1ZjFlODYwMjBjIiwidXNlcl9pZCI6MX0.t0H9lo6O5MQ9vg4fXx3fgeyZS5T8C8QtV3ymhRMtML0
+
+GET http://127.0.0.1:8001/api/adopters/
+Content-Type: application/json
+Authorization: Bearer {{token}}

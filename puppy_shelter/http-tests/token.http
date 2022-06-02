@@ -1,0 +1,9 @@
+
+POST http://localhost:8001/api/token
+Content-Type: application/json
+
+
+{
+    "username": "omni",
+    "password": "omni"
+}

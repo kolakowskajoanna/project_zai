@@ -1,1 +1,29 @@
-# todo :)
+version: "3"
+services:
+  djangoapp:
+    build:
+      context: ./puppy_shelter
+    image: saskodzi/zaii
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./puppy_shelter:/app
+    ports:
+      - "8001:8000"
+    depends_on:
+      - db
+    environment:
+      - PYTHONPATH=/app
+  db:
+    image: postgres:12.4
+    restart: always
+    environment:
+      # if user, pass, and db changes, need to remove previous containers # docker-compose rm -vf
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=app
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

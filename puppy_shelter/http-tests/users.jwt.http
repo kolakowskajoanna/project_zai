@@ -1,0 +1,7 @@
+
+@token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjU0MzQ2ODk0LCJpYXQiOjE2NTQxNzQwOTQsImp0aSI6ImU3YzY4Yzg4ZDFjMjRmMTA5ZDRhMDRjMWIxYjA5MzM2IiwidXNlcl9pZCI6MX0.gEiRV2jIjpwOMpASJnv_X_oW7eeLtfryORhy3UT6g-E
+
+
+GET http://localhost:8001/api/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
