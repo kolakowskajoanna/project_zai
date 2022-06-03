@@ -53,7 +53,9 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
-    )
+    ),
+    'PAGE_SIZE': 5,
+    'DEFAULT_PAGINATION_CLASS': 'api.pagination.PuppyPagination',
 }
 
 # APPEND_SLASH = False

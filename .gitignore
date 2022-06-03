@@ -9,3 +9,4 @@ __pycache__/
 # ... todo inne ignory
 *.sqlite3
 wip.py
+.DS_Store
