@@ -6,12 +6,13 @@ from api import views
 
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+router.register(r'users', views.UserViewSet, basename="users")
+router.register(r'groups', views.GroupViewSet, basename="groups")
 
-router.register(r'adopters', views.AdopterViewSet)
-router.register(r'adoption', views.AdoptionViewSet)
-router.register(r'puppys', views.PuppyViewSet)
+router.register(r'adopters', views.AdopterViewSet, basename="adopters")
+router.register(r'adoption-employees', views.AdoptionEmployeeViewSet, basename="adoption-employees")
+router.register(r'adoption-users', views.AdoptionUserViewSet, basename="adoption-users")
+router.register(r'puppys', views.PuppyViewSet, basename="puppys")
 
 urlpatterns = [
     path('', include(router.urls)),

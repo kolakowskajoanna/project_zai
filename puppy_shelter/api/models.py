@@ -8,6 +8,7 @@ class Adopter(models.Model):
     last_name = models.CharField(max_length=50)
     city = models.CharField(max_length=100, null=True)
     phone = models.CharField(max_length=9)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self) -> str:
         return f'''
