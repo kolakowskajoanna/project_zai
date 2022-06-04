@@ -4,6 +4,6 @@ Content-Type: application/json
 
 
 {
-    "username": "omni",
-    "password": "omni"
+    "username": "admin",
+    "password": "admin"
 }

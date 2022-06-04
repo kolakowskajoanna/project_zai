@@ -3,7 +3,7 @@ services:
   djangoapp:
     build:
       context: ./puppy_shelter
-    image: saskodzi/zaii
+    image: asia/zai
     command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
       - ./puppy_shelter:/app
