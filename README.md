@@ -17,18 +17,24 @@ docker-compose up djangoapp -d
 # http://localhost:8001/api
 # migracje i superuser
 docker-compose exec djangoapp python manage.py migrate
+
+# Testy
+potrzebne dane:
 docker-compose exec djangoapp python manage.py createsuperuser
-# testy
+u:admin p:admin
+# !!! na api dodac grupe "employees" !!!
+# !!! na api dodać usera emp należącego do grupy employees
+u:emp p:emp
+# Uruchomienie testów
 docker-compose exec djangoapp pytest -vvv
 
-# !!! na api dodac grupe "employees" !!!
+
 
 # klikac REST'a na testowajce ;)
 
-# zatrzymanie srodowiska docker
+# Zatrzymanie srodowiska docker
 docker-compose down
 ```
-
 ## Tworzenie userow i adopterow
 
 Dodajemy usera
